@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Grid</title>
+    <style>
+        .numbersone{
+            background-color: aqua;
+        }
+        .numberstwo{
+            background-color: tomato;
+        }
+        .numbersthree{
+            background-color: peru;
+        }
+        .numbersfour{
+            background-color: pink;
+        }
+        .numbersfive{
+            background-color: lightseagreen;
+
+        }
+        .numberssix{
+            background-color: bisque;
+        }
+        .numbers{
+            border-color: 3px solid red;
+        }
+        .container{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          
+          /* grid-template-columns: 100px auto 100px; */
+          /* grid-template-rows: 300px 300px 300px;
+           */
+           /* grid-gap:3px; */
+           
+        }
+        .numbersone{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .box{
+            background-color: slateblue;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .item{
+            width: 200px;
+            height: 100px;
+            background-color: aquamarine;
+            border: 2px solid tomato;
+        }
+        .con2{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        @media  screen and (max-width: 576px) {
+            .con{
+                flex-direction: column;
+            }
+            
+        }
+        .con{
+            display: flex;
+            gap: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="numbersone">1</div>
+    <div class="numberstwo">2</div>
+    <div class="numbersthree">3</div>
+    <div class="numbersfour">4</div>
+    <div class="numbersfive">5</div>
+    <div class="numberssix">6</div>
+</div>
+<div class="con"><div class="box"><h3>first box</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo harum facilis ad inventore quidem asperiores, assumenda cupiditate eum id quam excepturi culpa deleniti quia sapiente ex animi, temporibus perspiciatis repellat.</p></div>
+<div class="box"><h3>second box</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptatum labore quisquam ex accusantium similique sint, modi distinctio culpa explicabo minus neque, expedita ratione exercitationem itaque aliquam quis dolor laudantium.</p></div></div>
+<div class="con2"><div class="item">item-1</div>
+<div class="item">item-2</div>
+<div class="item">item-3</div>
+<div class="item">item-4</div>
+<div class="item">item-5</div>
+<div class="item">item-6</div>
+<div class="item">item-7</div>
+<div class="item">item-8</div>
+<div class="item">item-9</div>
+<div class="item">item-10</div></div>
+</body>
+</html>
